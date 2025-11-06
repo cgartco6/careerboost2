@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBoost - AI-Powered Career Advancement</title>
+    <meta name="description" content="Transform your career with CareerBoost. AI-powered CV rewriting, job matching, and automated applications. Find your dream job in South Africa.">
+    <meta name="keywords" content="career, jobs, South Africa, CV, resume, AI, job search, career boost">
+    
+    <!-- POPIA Compliance Meta Tags -->
+    <meta name="data-protection" content="POPIA Compliant">
+    <meta name="privacy-policy" content="/privacy">
+    <meta name="data-retention" content="2 years">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.openai.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2" crossorigin>
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="CareerBoost - AI-Powered Career Advancement">
+    <meta property="og:description" content="Transform your career with AI-powered CV rewriting, job matching, and automated applications in South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://careerboost.co.za">
+    <meta property="og:image" content="/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="CareerBoost">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CareerBoost - AI-Powered Career Advancement">
+    <meta name="twitter:description" content="Transform your career with AI-powered CV rewriting and job matching in South Africa.">
+    <meta name="twitter:image" content="/twitter-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CareerBoost",
+        "url": "https://careerboost.co.za",
+        "logo": "https://careerboost.co.za/logo.png",
+        "description": "AI-powered career advancement platform for South African job seekers",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "South Africa"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "support@careerboost.co.za",
+            "contactType": "customer service"
+        },
+        "sameAs": []
+    }
+    </script>
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Critical above-the-fold styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            min-height: 100vh;
+        }
+        
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1.5rem;
+        }
+        
+        .loading-text {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .loading-subtext {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .loading-spinner {
+                animation: none;
+                border: 4px solid white;
+            }
+        }
+        
+        /* High contrast support */
+        @media (prefers-contrast: high) {
+            .loading-container {
+                background: #000;
+                color: #fff;
+            }
+        }
+    </style>
+    
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    </noscript>
+</head>
+<body class="h-full">
+    <div id="root">
+        <!-- Loading screen shown until React app loads -->
+        <div class="loading-container" role="status" aria-live="polite">
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <div class="loading-text">CareerBoost</div>
+            <div class="loading-subtext">Loading your career advancement platform...</div>
+        </div>
+    </div>
+    
+    <!-- POPIA Consent Banner (will be controlled by React) -->
+    <div id="popia-banner" style="display: none;" role="dialog" aria-labelledby="popia-title" aria-describedby="popia-description">
+        <div class="popia-content">
+            <h2 id="popia-title">Privacy & Data Protection</h2>
+            <p id="popia-description">
+                We use cookies and similar technologies to provide and improve our service, in compliance with POPIA. 
+                By continuing to use CareerBoost, you agree to our use of cookies and data processing as described in our Privacy Policy.
+            </p>
+            <div class="popia-actions">
+                <button id="popia-accept" class="popia-button primary">Accept</button>
+                <button id="popia-reject" class="popia-button secondary">Reject</button>
+                <a href="/privacy" class="popia-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        // Register service worker for PWA capabilities
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            // Report Core Web Vitals to analytics
+            if ('webVitals' in window) {
+                webVitals.getCLS(console.log);
+                webVitals.getFID(console.log);
+                webVitals.getFCP(console.log);
+                webVitals.getLCP(console.log);
+                webVitals.getTTFB(console.log);
+            }
+        });
+        
+        // Error boundary for initial load failures
+        window.addEventListener('error', function(e) {
+            console.error('Global error caught:', e.error);
+            // Report to error monitoring service
+            if (window.sentry) {
+                window.sentry.captureException(e.error);
+            }
+        });
+    </script>
+    
+    <!-- Fallback for non-JS users -->
+    <noscript>
+        <div style="text-align: center; padding: 2rem; background: white; margin: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h1>CareerBoost</h1>
+            <p>JavaScript is required to use CareerBoost. Please enable JavaScript to continue.</p>
+            <p>For assistance, please contact <a href="mailto:support@careerboost.co.za">support@careerboost.co.za</a></p>
+        </div>
+    </noscript>
+    
+    <!-- Script to handle loading states -->
+    <script>
+        // Show loading state until React app is ready
+        window.addEventListener('DOMContentLoaded', function() {
+            const root = document.getElementById('root');
+            const loadingContainer = root.querySelector('.loading-container');
+            
+            // Hide loading screen when React app mounts
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'childList') {
+                        const reactApp = root.querySelector('[data-reactroot]');
+                        if (reactApp) {
+                            loadingContainer.style.display = 'none';
+                            observer.disconnect();
+                        }
+                    }
+                });
+            });
+            
+            observer.observe(root, { childList: true, subtree: true });
+            
+            // Fallback: hide loading after 10 seconds
+            setTimeout(function() {
+                loadingContainer.style.display = 'none';
+            }, 10000);
+        });
+        
+        // Handle online/offline status
+        window.addEventListener('online', function() {
+            // Show reconnect message or sync data
+            if (window.showReconnectMessage) {
+                window.showReconnectMessage('Connection restored');
+            }
+        });
+        
+        window.addEventListener('offline', function() {
+            // Show offline message
+            if (window.showOfflineMessage) {
+                window.showOfflineMessage('You are currently offline');
+            }
+        });
+    </script>
+</body>
+</html>
