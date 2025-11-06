@@ -1,0 +1,22 @@
+# CareerBoost - AI-Powered Career Platform
+
+A comprehensive AI-powered career advancement platform that rewrites CVs, matches jobs, and automates applications for South African job seekers.
+
+## Features
+
+- 🤖 AI-Powered CV Rewriting & Optimization
+- 📄 Professional Cover Letter Generation
+- 🔍 Smart Job Matching & Scraping
+- 💰 Payment Integration (FNB EFT & PayFast)
+- 🔒 POPIA Compliant & Military-Grade Security
+- 📊 Real-time Analytics Dashboard
+- 🛒 E-commerce Shopping Cart
+
+## Quick Start
+
+### Local Installation (Windows 10/11)
+
+1. **Run the setup script:**
+   ```cmd
+   cd deployment\local
+   setup.bat
